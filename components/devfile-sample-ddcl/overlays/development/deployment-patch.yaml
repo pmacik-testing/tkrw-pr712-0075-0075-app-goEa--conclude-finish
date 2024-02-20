@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ddcl
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0075-tenant/tkrw-pr712-0075-0075-app/devfile-sample-ddcl@sha256:c7c66c34f9c17f5e4d76aaad76c4ad9028376555744e7e9f7353c1b4d9189b63
+        name: my-nodejs
+        resources: {}
+status: {}
